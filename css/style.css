@@ -1,0 +1,698 @@
+/*tipografias*/
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Montserrat:ital@0;1&display=swap');
+
+/*
+Colores
+
+    #BB7F3B (naranja)
+    #686868 (gris)
+    #EADCC2 (crema)
+
+Tipografias
+
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Montserrat', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    display: flex; /*para que social-media y accesos queden uno al lado del otro*/
+    justify-content: space-between;
+    align-items: center;
+    background-color: #BB7F3B;
+    padding: 5px 10px 5px 10px;
+}
+
+/* íconos redes sociales */
+.social-media{
+    display: flex;
+    align-items: center;
+}
+.social-media .redes{
+    display: flex; /*para que los íconos queden uno al lado del otro*/
+    align-items: center;
+}
+.social-media .menu{
+    height: 1.875rem ;
+    width: 1.875rem ;
+    display: none;
+}
+.social-media .ig-logo{
+    height: 1.5625rem ;
+    width: 1.5625rem ;
+}
+.social-media .fb-logo{
+    height: 2rem ;
+    width: 2rem ;
+}
+.social-media .wp-logo{
+    height: 2rem ;
+    width: 2rem ;
+}
+
+/* íconos accesos */
+.accesos{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.accesos .carrito{
+    height: 2.1875rem ;
+    width: 2.1875rem;
+}
+.accesos .buscar{
+    height: 2.1875rem ;
+    width: 2.1875rem;
+}
+.accesos .iniciar-sesion{
+    background-color: #686868;
+    padding-top: .1875rem;
+    padding-bottom: .1875rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    border-radius: 1.875rem;
+    border: none;
+    height: 30px;
+}
+.accesos .iniciar-sesion a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* body */
+body{
+    background-color: #EADCC2;
+}
+
+/* TÍTULO */
+.title-main{ /*para centrar el título + subtítulo*/
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: .9375rem;
+    text-decoration: none;
+    color: black;
+}
+.title-main h1{
+    font-family: 'Abhaya Libre', serif;
+    font-weight: bold;
+    font-size: 4.375rem;
+}
+
+/* SUBTÍTULO */
+.title-main h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1rem;
+    position: relative;
+    bottom: .9375rem;
+    left: 2.5rem;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex; /*para alinear título con nav*/
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1.875rem;
+    margin-right: 1.875rem;
+}
+.navbar ul{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    display: flex; /*para alinear cada tab de la nav*/
+    list-style: none;
+    gap: 90px ;
+}
+.navbar ul li:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.main-tab{ /*para que se vea en bold la tab de la página donde estoy*/
+    font-weight: bold;
+}
+
+/* imagenes inicio*/
+.fotos-main{
+    display: flex;
+    gap: 5px;
+}
+.fotos-main img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover; /*para igualar el tamaño de todas las imágenes*/
+}
+/* section bottom */
+.section-bottom{
+    background-color: #E0C695;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    padding-top: 80px;
+}
+.section-bottom h3{ 
+    text-align: center;
+    font-size: 1.5625rem;
+    position: relative;
+}
+.section-bottom h3 i{
+    font-weight: lighter;
+    font-size: larger;
+    position: absolute;
+}
+
+/* section productos inicio*/
+.section-bottom .cards{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.cards .card-productos{ /*centra los círculos respecto al texto sobre ellos*/
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.card-productos a{
+    position: absolute;
+    background-color: rgba(245, 245, 220, 0.808);
+    border-radius: 10px;
+    width: 70%;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.card-productos img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* section recetas inicio*/
+.section-recetas{
+    margin-top: 100px;
+}
+.section-recetas h3 i{  /*para alinear "recetas" en el título*/
+    right: 53%;
+}
+.section-recetas .grid-bottom{
+    display: grid;
+    justify-content: center;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 50px;
+    width: 100%;
+    grid-template: repeat(2,250px) / repeat(2, 350px);
+    grid-template-areas:
+    "card1 card2"
+    "card3 button"
+    ;
+}
+.card1{
+    grid-area: card1;
+    background-color: white;
+    border-radius: 5%;
+}
+.card2{
+    grid-area: card2;
+    background-color: white;
+    border-radius: 5%;
+}
+.card3{
+    grid-area: card3;
+    background-color: white;
+    border-radius: 5%;
+}
+.grid-bottom button{
+    grid-area: button;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: #686868;
+    padding-top: .1875rem;
+    padding-bottom: .1875rem;
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    border-radius: 1.875rem;
+}
+.grid-bottom button a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+.scroll-up{
+    display: flex;
+    justify-content: right;
+    padding: 0px 40px 30px 30px;
+}
+.scroll-up a img{
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* PAGES */
+.title-pages{
+    text-align: center;
+    margin: 60px 0px 0px 0px;
+    font-family: 'Abhaya Libre', serif;
+    font-weight: lighter;
+    font-size: 36px;
+}
+.subtitle-pages{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 30px 30px 30px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* page productos */
+.categorias-productos{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0px 120px 0px;
+}
+.categorias-productos h4{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.categorias-productos .div-cat-prod{
+    background-color: #E0C695;
+    border-radius: 10%;
+    width: 300px;
+    height: 380px;
+    margin: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-cat-prod .prod-destacados{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    gap: 5px;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 
+    "prod1 prod2"
+    "prod3 prod4"
+    ;
+}
+.prod1{
+    background-color: white;
+    border-radius: 5px;
+}
+.prod2{
+    background-color: white;
+    border-radius: 5px;
+}
+.prod3{
+    background-color: white;
+    border-radius: 5px;
+}
+.prod4{
+    background-color: white;
+    border-radius: 5px;
+}
+.div-cat-prod button{
+    width: 40%;
+    background-color: #797979;
+    padding: 7px 0px 7px 0px;
+    margin-bottom: 20px;
+    border-radius: 1.875rem;
+    border: none;
+}
+.div-cat-prod button a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+/* page recetas */
+.recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 120px 0px;
+}
+.recetas .categorias-recetas{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.categorias-recetas .div-cat-recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0C695;
+    width: 300px;
+    height: 380px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.div-cat-recetas .preview-receta{
+    width: 240px;
+    height: 290px;
+    margin: 20px 20px 10px 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+.div-cat-recetas p{
+    display: inline;
+    font-size: 14px;
+}
+.recetas button{
+    background-color: #797979;
+    padding: 7px 20px 7px 20px;
+    margin-top: 15px;
+    border-radius: 1.875rem;
+    border: none;
+}
+.recetas button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+/* page politicas */
+.devoluciones{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin: 0px 80px 100px 80px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.devoluciones ul{
+    padding: 20px 0px 30px 0px;
+}
+.devoluciones ul li{
+    list-style: circle;
+}
+.cartel-importante{
+    align-self: center;
+    width: 45%;
+    background-color: #EDEDED;
+    padding: 0px 40px 20px 40px;
+    margin: 0px 0px 40px 0px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.title-importante{
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+}
+
+/* page contacto */
+form{
+    width: 38%;
+    margin: 10px;
+}
+.medios-de-contacto{
+    background-color: #EDEDED;
+    width: 20%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+.medios-de-contacto ul li{
+    list-style: none;
+}
+
+/* page nosotros */
+.nosotros{
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.ubicacion h3{
+    font-size: 25px;
+}
+.ubicacion img{
+    width: 2rem;
+    height: 2rem;
+}
+.ubicacion p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* footer */
+footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #BB7F3B;
+    text-align: center;
+    padding: 15px;
+    /* margin-top:  120px; */
+}
+
+
+
+/* MEDIA QUERIES */
+/* DESKTOP */
+@media (max-width: 1024px){
+    /* header */
+    .social-media .menu{
+        display: none;
+    }
+    /* navbar */
+    .navbar{
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+    .navbar ul{
+        gap: 40px ;
+    }
+    /* imagenes inicio*/
+    .fotos-main img{
+        width: 25%;
+        height: 18.75rem;
+    }
+    /* section productos inicio*/
+    .cards .card-productos{ /*centra los círculos respecto al texto sobre ellos*/
+        margin: 35px;
+    }
+    .card-productos img{
+        width: 220px;
+        height: 220px;
+    }
+    /* section recetas inicio*/
+    .section-recetas .grid-bottom{
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template: repeat(2,200px) / repeat(2, 300px);
+        grid-template-areas:
+        "card1 card2"
+        "card3 button"
+        ;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px){
+    /* header */
+    .social-media .menu{
+        display: inline ;
+    }    
+    /* navbar */
+    main .navbar .nav-izq{
+        display: none ;
+    }
+    main .navbar .nav-der{
+        display: none ;
+    }
+    /* titulo */
+    .title-main h1{
+        font-size: 4.0625rem;
+    }
+    /* subtitulo */
+    .title-main h2{
+        font-size: .9375rem;
+    }
+    .fotos-main .foto3{
+        display: none;
+    }
+    /* setion bottom */
+    .section-bottom h3{ 
+        font-size: 1.375rem;
+    }
+    /* section productos inicio*/
+    .cards .card-productos{
+        margin: 20px;
+    }
+    .card-productos a{
+        font-size: 1rem;
+    }
+    .card-productos img{
+        width: 180px;
+        height: 180px;
+    }
+    /* section recetas inicio*/
+    .section-recetas .grid-bottom{
+        column-gap: 20px;
+        row-gap: 20px;
+        grid-template: repeat(2,200px) / repeat(2, 300px);
+        grid-template-areas:
+        "card1 card2"
+        "card3 button"
+        ;
+    }
+    .section-bottom .scroll-up a img{
+        width: 40px;
+        height: 40px;
+    }
+    footer{
+    font-size: 14px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 425px){
+    /* socials header */
+    .social-media .menu{
+        height: 1.875rem ;
+        width: 1.875rem ;
+    }
+    .social-media .ig-logo{
+        height: 1.5625rem ;
+        width: 1.5625rem ;
+    }
+    .social-media .fb-logo{
+        height: 2rem ;
+        width: 2rem ;
+    }
+    header .accesos{
+        display: none;
+    }
+    /* navbar */
+    main .navbar .nav-izq{
+        display: none ;
+    }
+    main .navbar .nav-der{
+        display: none ;
+    }
+    /* título main */
+    .title-main h1{
+        font-size: 3.125rem;
+    }
+    .title-main h2{
+        font-size: .8125rem;
+    }
+    /* imagenes inicio*/
+    .fotos-main{
+        gap: 2px;
+        width: 100%;
+    }
+    .fotos-main img{
+        width: 100%;
+        height: 11.25rem;
+        overflow: hidden;
+    }
+    .fotos-main .foto3{
+        display: none;
+    }
+    /* section bottom */
+    .section-bottom{
+        margin-top: 30px;
+        padding-top: 50px;
+    }
+    .section-bottom h3{ 
+        font-size: 1rem;
+    }
+    /* section productos inicio*/
+    .section-bottom .cards{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .cards .card-productos{
+        margin: .625rem;
+    }
+    .card-productos a h4{
+        font-size: .75rem;
+    }
+    .card-productos img{
+        border-radius: 50%;
+        width: 9.375rem;
+        height: 9.375rem;
+        object-fit: cover;
+    }
+    /* section recetas inicio*/
+    .section-recetas{
+        margin-top: 60px;
+    }
+    .section-recetas .grid-bottom{
+        row-gap: 20px;
+        padding: 20px;
+        grid-template: repeat(2,150px) 100px / 250px;
+        grid-template-areas:
+        "card1"
+        "card2"
+        "button"
+        ;
+    }
+    .card3{
+        display: none;
+    }
+    .grid-bottom button{
+        justify-self: center;
+    }
+    .section-bottom .scroll-up{
+        padding: 0px 40px 30px 30px;
+    }
+    .section-bottom .scroll-up a img{
+        width: 40px;
+        height: 40px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px){
+    /* imagenes inicio*/
+    .fotos-main img{
+        height: 160px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 320px){
+    /* imagenes inicio*/
+    .fotos-main .foto3{
+        display: none;
+    }
+    .fotos-main .foto4{
+        display: none;
+    }
+    .fotos-main{
+        width: 100%;
+    }
+    .fotos-main img{
+        height: 200px;
+        overflow: hidden;
+    }
+}
