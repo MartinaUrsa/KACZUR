@@ -747,7 +747,20 @@ footer{
     }
     
     .card-productos img{
-        width: 12.5rem;
-        height: 12.5rem;
+        width: 15.625rem;
+        height: 15.625rem;
+    }
+
+    .card-productos a{
+        font-size: 1.25rem;
+    }
+
+    /* section recetas inicio */
+    .section-recetas .grid-bottom{
+        grid-template: repeat(2, 300px) / repeat(2, 400px);
+        grid-template-areas:
+        "card1 card2"
+        "card3 button"
+        ;
     }
 }
