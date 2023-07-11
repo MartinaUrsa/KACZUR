@@ -19,7 +19,6 @@ Tipografias
     box-sizing: border-box;
 }
 
-
 /* MOBILE FISRT */
     /* header */
     header{
@@ -28,7 +27,7 @@ Tipografias
         justify-content: space-between;
         align-items: center;
         background-color: #BB7F3B;
-        padding: 5px 10px;
+        padding: 5px 10px 5px 0px;
         margin-bottom: .625rem;
     }
 
@@ -43,9 +42,51 @@ Tipografias
         align-items: center;
     }
 
+    /* menu desplegable */
     .social-media .menu{
-        width: 1.875rem;
-        height: 1.875rem;
+        font-size: 30px;
+        margin: 5px;
+        padding: 0 0 0 5px;
+        cursor: pointer;
+    }
+
+    .social-media .menu:hover{
+        color: white;
+        background-color: #646464;
+        padding-right: 128.8px;
+    }
+
+    .menu-desplegable{
+        display: none;
+        background-color: #646464;
+        position: absolute;
+        z-index: 4;
+        left: 5px;
+        width: 150px;
+        padding: 0 150px 0 10px;
+    }
+
+    .menu-desplegable ul li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .menu-desplegable a{
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 7px;
+    }
+
+    .social-media .menu:hover .menu-desplegable{
+        display: block;
+    }
+
+    .menu-desplegable ul li i{
+        font-size: 20px;
     }
 
     .social-media .ig-logo{
@@ -438,6 +479,7 @@ Tipografias
     text-align: center;
     padding: 20px 0px 10px 0px;
 }
+
 
 /* page contacto */
 form{
