@@ -596,24 +596,60 @@ footer{
     .accesos .carrito{
         height: 2.1875rem ;
         width: 2.1875rem;
+        cursor: pointer;
+        margin-right: 14px;
+    }
+
+    .buscar{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .buscar input{
+        width: 0px;
+        height: 30px;
+        margin-right: 2px;
+        padding: 0px 10px;
+        font-size: .9375rem;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        transition: all 0.5s ease;
+    }
+
+    .buscar .btn{
+        position: absolute;
+        right: 0;
+        font-size: 28px;
+        background-color: #BB7F3B;
+        border-radius: 50%;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
     }
     
-    .accesos .buscar{
-        height: 2.1875rem ;
-        width: 2.1875rem;
+    .buscar:hover input{
+        width: 220px;
     }
-    
+
+    .buscar input:focus{
+        width: 220px;
+    }
+
     .accesos .iniciar-sesion{
         background-color: #686868;
-        padding: .1875rem .625rem;
-        border-radius: 1.875rem;
+        border-radius: 30px;
         height: 30px;
+        width: 140px;
     }
     
     .accesos .iniciar-sesion a{
         text-decoration: none;
         color: white;
-        font-size: 1rem;
+        font-size: 15px;
         font-family: 'Montserrat', sans-serif;
     }
 
