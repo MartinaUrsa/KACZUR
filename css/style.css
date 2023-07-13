@@ -19,7 +19,7 @@ Tipografias
     box-sizing: border-box;
 }
 
-/* MOBILE FISRT */
+/* MOBILE FIRST */
     /* header */
     header{
         width: 100%;
@@ -42,53 +42,6 @@ Tipografias
         align-items: center;
     }
 
-    /* menu desplegable */
-    .social-media .menu{
-        font-size: 30px;
-        margin: 5px;
-        padding: 0 0 0 5px;
-        cursor: pointer;
-    }
-
-    .social-media .menu:hover{
-        color: white;
-        background-color: #646464;
-        padding-right: 128.8px;
-    }
-
-    .menu-desplegable{
-        display: none;
-        background-color: #646464;
-        position: absolute;
-        z-index: 4;
-        left: 5px;
-        width: 150px;
-        padding: 0 150px 0 10px;
-    }
-
-    .menu-desplegable ul li{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        padding: 15px 0;
-    }
-
-    .menu-desplegable a{
-        text-decoration: none;
-        font-size: 16px;
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        padding-left: 7px;
-    }
-
-    .social-media .menu:hover .menu-desplegable{
-        display: block;
-    }
-
-    .menu-desplegable ul li i{
-        font-size: 20px;
-    }
-
     .social-media .ig-logo{
         width: 1.5625rem ;
         height: 1.5625rem ;
@@ -102,6 +55,53 @@ Tipografias
     .social-media .wp-logo{
         height: 2rem ;
         width: 2rem ;
+    }
+
+    /* menu desplegable */
+    .social-media .menu{
+        font-size: 30px;
+        margin: 5px;
+        padding: 0 0 0 5px;
+        cursor: pointer;
+    }
+
+    .social-media .menu:hover{
+        color: white;
+        background-color: #646464ed;
+        padding-right: 128.8px;
+    }
+
+    .menu .menu-desplegable{
+        display: none;
+        background-color: #646464ed;
+        position: absolute;
+        z-index: 4;
+        left: 5px;
+        width: 150px;
+        padding: 0 150px 0 10px;
+    }
+
+    .menu .menu-desplegable ul li{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .menu .menu-desplegable ul li i{
+        font-size: 20px;
+    }
+
+    .menu .menu-desplegable ul li a{
+        text-decoration: none;
+        font-size: 16px;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        padding-left: 7px;
+    }
+
+    .menu:hover .menu-desplegable{
+        display: block;
     }
 
     /* íconos accesos */
@@ -265,20 +265,17 @@ Tipografias
         display: none;
     }
 
-    button{
+    .grid-bottom .button-recetas{
         grid-area: button;
-        width: 150px;
-        height: 30px;
+        width: 9.375rem;
+        height: 1.875rem;
         background-color: #686868;
-        padding-top: .1875rem;
-        padding-bottom: .1875rem;
-        padding-left: .9375rem;
-        padding-right: .9375rem;
+        padding: .1875rem .9375rem;
         border-radius: 1.875rem;
         justify-self: center;
     }
     
-    .grid-bottom button a{
+    .grid-bottom .button-recetas a{
         color: white;
         text-decoration: none;
         font-family: 'Montserrat', sans-serif;
@@ -357,31 +354,32 @@ Tipografias
     ;
 }
 
-.prod1{
+.prod1, .prod2, .prod3, .prod4{
     background-color: white;
     border-radius: 5px;
+}
+
+.prod1{
+    grid-area: prod1;
 }
 
 .prod2{
-    background-color: white;
-    border-radius: 5px;
+    grid-area: prod2;
 }
 
 .prod3{
-    background-color: white;
-    border-radius: 5px;
+    grid-area: prod3;
 }
 
 .prod4{
-    background-color: white;
-    border-radius: 5px;
+    grid-area: prod4;
 }
 
 .div-cat-prod button{
     width: 40%;
     background-color: #797979;
     padding: .4375rem 0rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5625rem;
     border-radius: 1.875rem;
     border: none;
 }
@@ -545,6 +543,7 @@ footer{
         width: 12.5rem;
         height: 12.5rem;
     }
+
     /* PAGES */
     .title-pages{
         font-size: 1.5625rem;
@@ -625,6 +624,10 @@ footer{
 /* desktop */
 @media (min-width: 1024px){
     /* header */
+    .social-media{
+        margin-left: 10px;
+    }
+    
     .social-media .menu{
         display: none;
     }
@@ -635,6 +638,20 @@ footer{
         align-items: center;
     } 
 
+    .accesos .iniciar-sesion{
+        background-color: #686868;
+        border-radius: 30px;
+        height: 30px;
+        width: 140px;
+    }
+    
+    .accesos .iniciar-sesion a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
     .accesos .carrito{
         height: 2.1875rem ;
         width: 2.1875rem;
@@ -642,6 +659,7 @@ footer{
         margin-right: 14px;
     }
 
+    /* barra buscadora */
     .buscar{
         position: relative;
         display: flex;
@@ -660,16 +678,16 @@ footer{
         transition: all 0.5s ease;
     }
 
-    .buscar .btn{
+    .buscar i{
         position: absolute;
         right: 0;
-        font-size: 28px;
-        background-color: #BB7F3B;
-        border-radius: 50%;
-        text-align: center;
         width: 40px;
         height: 40px;
         line-height: 40px;
+        font-size: 1.75rem;
+        text-align: center;
+        background-color: #BB7F3B;
+        border-radius: 50%;
         cursor: pointer;
     }
     
@@ -681,25 +699,11 @@ footer{
         width: 220px;
     }
 
-    .accesos .iniciar-sesion{
-        background-color: #686868;
-        border-radius: 30px;
-        height: 30px;
-        width: 140px;
-    }
-    
-    .accesos .iniciar-sesion a{
-        text-decoration: none;
-        color: white;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-
+    /* navbar */
     .title-main{
         padding: 10px 0px;
     }
 
-    /* navbar */
     .navbar{
         font-family: 'Montserrat', sans-serif;
         display: flex; /*para alinear título con nav*/
@@ -782,10 +786,10 @@ footer{
         ;
     }
 
-    button{
+    .section-recetas .button-recetas{
         justify-self: start;
-        width: 180px;
-        height: 40px;
+        width: 11.25rem;
+        height: 2.5rem;
         font-size: 1.0625rem;
     }
     
@@ -836,6 +840,7 @@ footer{
         font-size: 1.125rem;
         left: 5rem;
     }
+
     /* navbar */
     .navbar ul{
         font-size: 20px;
