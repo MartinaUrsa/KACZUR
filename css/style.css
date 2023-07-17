@@ -27,7 +27,7 @@ Tipografias
         justify-content: space-between;
         align-items: center;
         background-color: #BB7F3B;
-        padding: 5px 10px 5px 0px;
+        padding: 5px 10px;
         margin-bottom: .625rem;
     }
 
@@ -48,34 +48,40 @@ Tipografias
     }
 
     /* menu desplegable */
+    .social-media{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .social-media .menu{
         font-size: 30px;
-        margin: 5px;
-        padding: 0 0 0 5px;
         cursor: pointer;
     }
 
-    .social-media .menu:hover{
-        color: white;
-        background-color: #646464ed;
-        padding-right: 128.8px;
-    }
-
     .menu .menu-desplegable{
-        display: none;
-        background-color: #646464d7;
+        display: block;
+        background-color: #646464e3;
         position: absolute;
         z-index: 4;
-        left: 5px;
-        width: 150px;
-        padding: 0 150px 0 10px;
+        top: -100%;
+        left: 40%;
+        width: 60%;
+        height: 100%;
+        padding-left: 10px;
     }
 
     .menu .menu-desplegable ul li{
-        list-style: none;
         display: flex;
         align-items: center;
+        justify-content: center;
+        list-style: none;
         padding: 15px 0;
+    }
+
+    :is(.menu .menu-desplegable ul li i,
+    .menu .menu-desplegable ul li a){
+        display: none;
     }
 
     .menu .menu-desplegable ul li i{
@@ -91,7 +97,19 @@ Tipografias
     }
 
     .menu:hover .menu-desplegable{
+        color: white;
+    }
+
+    :is(.menu:hover .menu-desplegable, 
+    .menu:hover .menu-desplegable ul li i, 
+    .menu:hover .menu-desplegable ul li a){
         display: block;
+    }
+
+    .menu:hover .menu-desplegable{
+        top: 0;
+        padding: 30px;
+        transition: all 0.8s;
     }
 
     /* íconos accesos */
