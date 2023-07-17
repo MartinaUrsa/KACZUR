@@ -32,29 +32,19 @@ Tipografias
     }
 
     /* íconos redes sociales */
-    .social-media{
+    :is(.social-media, .redes){
         display: flex;
         align-items: center;
     }
-    
-    .social-media .redes{
-        display: flex; /*para que los íconos queden uno al lado del otro*/
-        align-items: center;
+
+    :is(.fb-logo, .wp-logo){
+        width: 2rem ;
+        height: 2rem ;
     }
 
     .social-media .ig-logo{
         width: 1.5625rem ;
         height: 1.5625rem ;
-    }
-
-    .social-media .fb-logo{
-        width: 2rem ;
-        height: 2rem ;
-    }
-
-    .social-media .wp-logo{
-        height: 2rem ;
-        width: 2rem ;
     }
 
     /* menu desplegable */
@@ -73,7 +63,7 @@ Tipografias
 
     .menu .menu-desplegable{
         display: none;
-        background-color: #646464ed;
+        background-color: #646464d7;
         position: absolute;
         z-index: 4;
         left: 5px;
@@ -112,6 +102,7 @@ Tipografias
     /* body */
     body{
         background-color: #EADCC2;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* TÍTULO */
@@ -130,7 +121,6 @@ Tipografias
 
     /* SUBTÍTULO */
     .title-main h2{
-        font-family: 'Montserrat', sans-serif;
         font-style: italic;
         font-weight: lighter;
         font-size: .8125rem;
@@ -166,7 +156,6 @@ Tipografias
     /* section bottom */
     .section-bottom{
         background-color: #E0C695;
-        font-family: 'Montserrat', sans-serif;
         margin-top: 1.875rem;
         padding-top: 3.75rem;
     }
@@ -355,8 +344,8 @@ Tipografias
 }
 
 .prod1, .prod2, .prod3, .prod4{
-    background-color: white;
     border-radius: 5px;
+    background-color: snow;
 }
 
 .prod1{
@@ -623,6 +612,10 @@ footer{
 
 /* desktop */
 @media (min-width: 1024px){
+    a:focus-visible{
+        outline: 3px solid gray;
+    }
+
     /* header */
     .social-media{
         margin-left: 10px;
