@@ -1,0 +1,47 @@
+/* page recetas */
+.recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0px 120px 0px;
+    .categorias-recetas{
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+    }
+    button{
+        background-color: #797979;
+        padding: 7px 20px 7px 20px;
+        margin-top: 15px;
+        border-radius: 1.875rem;
+        border: none;
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+    }
+}
+.div-cat-recetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E0C695;
+    width: 300px;
+    height: 380px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    .preview-receta{
+        width: 240px;
+        height: 290px;
+        margin: 20px 20px 10px 20px;
+        border-radius: 5px;
+        background-color: white;
+    }
+    p{
+        display: inline;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,25 @@
+// iconos social media
+.social-media{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .redes{
+        display: flex;
+        align-items: center;
+    }
+        .ig-logo{
+            width: 1.5625rem ;
+            height: 1.5625rem ;
+        }
+        .fb-logo, .wp-logo{
+            width: 2rem ;
+            height: 2rem ;
+        }
+}
+
+// iconos accesos
+.accesos{
+    display: none;
+}
+

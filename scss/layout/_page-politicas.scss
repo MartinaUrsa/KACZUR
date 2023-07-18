@@ -1,0 +1,30 @@
+/* page politicas */
+.devoluciones{
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin: 0px 80px 100px 80px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul{
+        padding: 20px 0px 30px 0px;
+        li{
+            list-style: circle;
+        }
+    }
+}
+
+.cartel-importante{
+    align-self: center;
+    width: 45%;
+    background-color: #EDEDED;
+    padding: 0px 40px 20px 40px;
+    margin: 0px 0px 40px 0px;
+    border-radius: 10px;
+    border: 2px solid black;
+    .title-importante{
+        text-align: center;
+        padding: 20px 0px 10px 0px;
+    }    
+}
