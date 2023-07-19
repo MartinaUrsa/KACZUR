@@ -1,0 +1,27 @@
+@mixin flex($justify,$align,$dir,$wrap){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($col,$row,$justify,$align,$col-gap,$row-gap,$areas){
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    justify-content: $justify;
+    column-gap: $col-gap;
+    row-gap: $row-gap;
+    grid-template-areas: $areas;
+}
+
+@mixin prop-anclas{
+    text-decoration: none;
+    color: black;
+}
+
+@mixin buttons{
+    border-radius: 1.875rem;
+    border-style: none;
+    background-color: $main-gray;
+}

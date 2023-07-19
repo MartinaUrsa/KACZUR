@@ -1,47 +1,82 @@
 /* page recetas */
-.recetas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0px 120px 0px;
-    .categorias-recetas{
-        display: flex;
+    .recetas{
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-columns: 15.625rem;
+        grid-template-rows: repeat(3, 21.875rem) 50px;
         justify-content: center;
-        gap: 60px;
-    }
-    button{
-        background-color: #797979;
-        padding: 7px 20px 7px 20px;
-        margin-top: 15px;
-        border-radius: 1.875rem;
-        border: none;
-        a{
-            text-decoration: none;
-            color: white;
-            font-size: 15px;
+        grid-template-areas:
+        "div-cat-recetas1"
+        "div-cat-recetas2"
+        "div-cat-recetas3"
+        "button"
+        ;
+        .div1{
+            grid-area: div-cat-recetas1;
         }
+        .div2{
+            grid-area: div-cat-recetas2;
+        }
+        .div3{
+            grid-area: div-cat-recetas3;
+        }
+        .button-page-recetas{
+            grid-area: button;
+        }
+        .div-cat-recetas{
+            @include flex(none,center,column,none);
+            background-color: $color-cards-pages;
+            margin: .625rem;
+            border-radius: 10%;
+            text-align: center;
+            font-family: $font-general;
+            .preview-receta{
+                width: 12.5rem;
+                height: 15.625rem;
+                margin: 1.25rem;
+                border-radius: 5px;
+                background-color: white; /*colocar img receta*/
+            }
+            h4{
+                font-size: 14px;
+            }
+            p{
+                display: none;
+            }
+        }
+        button{
+            @include buttons;
+            width: 55%;
+            height: 30px;
+            justify-self: center;
+            padding: 7px 15px;
+            margin: 15px 0;
+            a{
+                @include prop-anclas;
+                color: white;
+                font-size: 13px;
+            }
     }
 }
-.div-cat-recetas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E0C695;
-    width: 300px;
-    height: 380px;
-    margin: 10px 10px 10px 10px;
-    border-radius: 10%;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    .preview-receta{
-        width: 240px;
-        height: 290px;
-        margin: 20px 20px 10px 20px;
-        border-radius: 5px;
-        background-color: white;
-    }
-    p{
-        display: inline;
-        font-size: 14px;
-    }
-}
+
+
+
+
+
+//     @include flex(none,center,column,none);
+//     margin: 20px 0px 120px 0px;
+//     .categorias-recetas{
+//         @include flex(center,center,column,none);
+//         gap: 60px;
+//     }
+//     button{
+//         @include buttons;
+//         padding: 7px 20px 7px 20px;
+//         margin-top: 15px;
+//         a{
+//             @include prop-anclas;
+//             color: white;
+//             font-size: 15px;
+//         }
+//     }
+// }

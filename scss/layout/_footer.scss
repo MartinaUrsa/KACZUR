@@ -1,8 +1,8 @@
 /*footer*/
 footer{
+    font-family: $font-general;
     font-size: .75rem;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #BB7F3B;
     text-align: center;
+    background-color: $color-header-footer;
     padding: 15px;
 }

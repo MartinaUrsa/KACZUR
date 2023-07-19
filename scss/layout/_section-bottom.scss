@@ -1,8 +1,20 @@
 /*section bottom*/
 .section-bottom{
-    background-color: #E0C695;
+    background-color: $color-body;
     margin-top: 1.875rem;
     padding-top: 3.75rem;
+    .h3-prod{
+        text-align: center;
+        font-size: 1.0625rem;
+        position: relative;
+        right: 5%;
+        .i-prod{
+            font-weight: lighter;
+            font-size: larger;
+            position: absolute;
+            left: 50%;
+        }
+    }
     .h3-recetas{
         text-align: center;
         font-size: 1.0625rem;
@@ -14,44 +26,30 @@
             text-align: right;
         }
     }
-    .h3-prod{
-        @extend .h3-recetas;
-        right: 5%;
-        i{
-            font-weight: lighter;
-            font-size: larger;
-            position: absolute;
-            left: 50%;
-        }
-    }
 }
 
 // section productos
 .cards{
-    display: flex;
-    flex-direction: column;
+    @include flex(center,center,column,none);
     text-align: center;
     margin: 3.125rem;
     .card-productos{
+        @include flex(center,center,row,none);
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         margin: 1.25rem;
         a{
+            @include prop-anclas;
             font-size: .875rem;
             position: absolute;
             background-color: rgba(245, 245, 220, 0.808);
-            border-radius: 10px;
+            border-radius: 5px;
             padding: .3125rem 1.5625rem;
-            text-decoration: none;
-            color: black;
         }
         img{
-            border-radius: 50%;
-            object-fit: cover;
             width: 10.625rem;
             height: 10.625rem;
+            border-radius: 50%;
+            object-fit: cover;
         }
     }
 }
@@ -84,28 +82,26 @@
         .card3{
             display: none;
         }
-    }
-}
-
-.button-recetas{
-    grid-area: button;
-    width: 9.375rem;
-    height: 1.875rem;
-    background-color: #686868;
-    padding: .1875rem .9375rem;
-    border-radius: 1.875rem;
-    justify-self: center;
-    a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
+        .button-recetas{
+            grid-area: button;
+            width: 9.375rem;
+            height: 1.875rem;
+            padding: .1875rem .9375rem;
+            @include buttons;
+            justify-self: center;
+            a{
+                @include prop-anclas;
+                color: white;
+                font-family: $font-general;
+            }
+        }
     }
 }
 
 .scroll-up{
     display: flex;
     justify-content: right;
-    padding: 0px 30px 30px 0px;
+    padding: 0px 20px 30px 0px;
     a{
         img{
             width: 2.5rem;

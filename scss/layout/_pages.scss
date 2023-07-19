@@ -1,16 +1,16 @@
 /*pages*/
 .title-pages{
+    font-family: $font-titles;
     text-align: center;
     margin-top: 2.5rem;
-    font-family: 'Abhaya Libre', serif;
-    font-size: 1.375rem;
+    font-size: 1.4375rem;
 }
 
 .subtitle-pages{
-    font-family: 'Montserrat', sans-serif;
-    padding: 10px 30px 30px 30px;
-    width: 100%;
-    font-size: 18px;
+    font-family: $font-general;
     text-align: center;
     font-style: italic;
+    font-size: 1rem;
+    padding: 10px 30px 30px 30px;
+    width: 100%;
 }

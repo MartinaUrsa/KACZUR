@@ -1,24 +1,20 @@
 /*page productos*/
 .categorias-productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(none,center,column,none);
     gap: 60px;
     margin: 50px 0px;
     h4{
-        font-family: 'Montserrat', sans-serif;
+        font-family: $font-general;
         text-align: center;
         font-size: .9375rem;
     }
     .div-cat-prod{
-        background-color: #E0C695;
+        @include flex(none,center,column,none);
+        background-color: $color-cards-pages;
         border-radius: 10%;
         width: 15.625rem;
         height: 20.625rem;
         margin: 10px 10px 0px 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         .prod-destacados{
             display: grid;
             width: 100%;
@@ -33,7 +29,7 @@
             ;
             .prod1, .prod2, .prod3, .prod4{
                 border-radius: 5px;
-                background-color: snow;
+                background-color: white;
             }
             .prod1{
                 grid-area: prod1;
@@ -49,14 +45,12 @@
             }
         }
         button{
+            @include buttons;
             width: 40%;
-            background-color: #797979;
             padding: .4375rem 0rem;
             margin-bottom: 1.5625rem;
-            border-radius: 1.875rem;
-            border: none;
             a{
-                text-decoration: none;
+                @include prop-anclas;
                 color: white;
                 font-size: .75rem;
             }
