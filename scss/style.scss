@@ -1,16 +1,20 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
-@import "./base/typo";
+
+@import "./base/typography";
 @import "./base/reset";
+
+@import "./components/buttons";
+
 @import "./layout/_header.scss";
-@import "./components/iconos-header";
 @import "./components/menu-desplegable";
-@import "./layout/main";
-@import "./layout/section-bottom";
+@import "./components/navbar";
+@import "./layout/index";
 @import "./layout/pages";
-@import "./layout/page-prod";
-@import "./layout/page-recetas";
-@import "./layout/page-politicas";
-@import "./layout/page-contacto";
-@import "./layout/page-nosotros";
+@import "./layout/productos";
+@import "./layout/recetas";
+@import "./layout/politicas";
+@import "./layout/contacto";
+@import "./layout/nosotros";
+@import "./layout/_media768.scss";
 @import "./layout/footer";

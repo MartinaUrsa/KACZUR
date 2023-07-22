@@ -1,11 +1,5 @@
-//body
-body{
-    background-color: $color-body;
-    font-family: $font-general  ;
-}
-
-/*title main*/
-.title-main{
+/*main title*/
+.title-nav{
     text-align: center;
     @include prop-anclas;
     h1{
@@ -24,24 +18,9 @@ body{
     }
 }
 
-// navbar
+/*navbar*/
 .navbar{
     .nav-izq, .nav-der{
         display: none;
     }
 }
-
-// fotos main
-.fotos-main{
-    display: flex;
-    gap: .125rem;
-    width: 100%;
-    img{
-        width: 33.3%;
-        object-fit: cover;
-        overflow: hidden;
-        }
-    .foto3{
-        display: none;
-        }
-    }

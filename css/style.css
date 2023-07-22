@@ -8,6 +8,67 @@ font-family: 'Montserrat', sans-serif;*/
   box-sizing: border-box;
 }
 
+/*boton section recetas main*/
+.grid-bottom .button-section-recetas {
+  grid-area: button;
+  width: 9.375rem;
+  height: 1.875rem;
+  padding: 0.1875rem 0.9375rem;
+  border-radius: 1.875rem;
+  border-style: none;
+  background-color: #686868;
+  justify-self: center;
+}
+.grid-bottom .button-section-recetas a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-page-productos {
+  border-radius: 1.875rem;
+  border-style: none;
+  background-color: #686868;
+  width: 40%;
+  padding: 0.4375rem 0rem;
+  margin: 15px 0px;
+}
+.button-page-productos a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  font-size: 0.75rem;
+}
+
+.button-page-recetas {
+  border-radius: 1.875rem;
+  border-style: none;
+  background-color: #686868;
+  width: 60%;
+  height: 30px;
+  justify-self: center;
+  padding: 7px 15px;
+  margin: 15px 0;
+}
+.button-page-recetas a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  font-size: 13px;
+}
+
+/*boton scroll up*/
+.scroll-up {
+  display: flex;
+  justify-content: right;
+  padding: 0px 20px 30px 0px;
+}
+.scroll-up a img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 /*header*/
 header {
   width: 100%;
@@ -36,11 +97,11 @@ header {
   flex-direction: none;
   flex-wrap: none;
 }
-.social-media .ig-logo {
+.social-media .redes .ig-logo {
   width: 1.5625rem;
   height: 1.5625rem;
 }
-.social-media .fb-logo, .social-media .wp-logo {
+.social-media .redes .fb-logo {
   width: 1.875rem;
   height: 1.875rem;
 }
@@ -50,7 +111,7 @@ header {
 }
 
 /*menu desplegable*/
-.menu {
+.menu i {
   font-size: 30px;
   cursor: pointer;
 }
@@ -58,7 +119,7 @@ header {
   color: white;
   top: 0;
   padding: 30px;
-  transition: all 0.8s;
+  transition: all 0.6s ease;
 }
 
 .menu-desplegable {
@@ -98,23 +159,18 @@ header {
   display: block;
 }
 
-body {
-  background-color: #EADCC2;
-  font-family: "Montserrat", sans-serif;
-}
-
-/*title main*/
-.title-main {
+/*main title*/
+.title-nav {
   text-align: center;
   text-decoration: none;
   color: black;
 }
-.title-main h1 {
+.title-nav h1 {
   font-family: "Abhaya Libre", serif;
   font-weight: bold;
   font-size: 2.8125rem;
 }
-.title-main h2 {
+.title-nav h2 {
   display: inline;
   font-style: italic;
   font-weight: lighter;
@@ -124,10 +180,18 @@ body {
   left: 1.5625rem;
 }
 
+/*navbar*/
 .navbar .nav-izq, .navbar .nav-der {
   display: none;
 }
 
+/*body*/
+body {
+  background-color: #EADCC2;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*fotos main*/
 .fotos-main {
   display: flex;
   gap: 0.125rem;
@@ -172,6 +236,7 @@ body {
   text-align: right;
 }
 
+/*section productos*/
 .cards {
   display: flex;
   justify-content: center;
@@ -206,6 +271,7 @@ body {
   object-fit: cover;
 }
 
+/*section recetas*/
 .section-recetas {
   margin-top: 3.75rem;
 }
@@ -230,32 +296,6 @@ body {
 }
 .section-recetas .grid-bottom .card3 {
   display: none;
-}
-.section-recetas .grid-bottom .button-recetas {
-  grid-area: button;
-  width: 9.375rem;
-  height: 1.875rem;
-  padding: 0.1875rem 0.9375rem;
-  border-radius: 1.875rem;
-  border-style: none;
-  background-color: #686868;
-  justify-self: center;
-}
-.section-recetas .grid-bottom .button-recetas a {
-  text-decoration: none;
-  color: black;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
-
-.scroll-up {
-  display: flex;
-  justify-content: right;
-  padding: 0px 20px 30px 0px;
-}
-.scroll-up a img {
-  width: 2.5rem;
-  height: 2.5rem;
 }
 
 /*pages*/
@@ -298,18 +338,18 @@ body {
   flex-wrap: none;
   background-color: #E0C695;
   border-radius: 10%;
-  width: 15.625rem;
-  height: 20.625rem;
+  width: 13.75rem;
+  height: 18.75rem;
   margin: 10px 10px 0px 10px;
 }
 .categorias-productos .div-cat-prod .prod-destacados {
   display: grid;
   width: 100%;
   height: 100%;
-  padding: 1.875rem;
+  padding: 1.6875rem;
   gap: 0.3125rem;
   grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(2, 55%);
   grid-template-areas: "prod1 prod2" "prod3 prod4";
 }
 .categorias-productos .div-cat-prod .prod-destacados .prod1, .categorias-productos .div-cat-prod .prod-destacados .prod2, .categorias-productos .div-cat-prod .prod-destacados .prod3, .categorias-productos .div-cat-prod .prod-destacados .prod4 {
@@ -328,27 +368,13 @@ body {
 .categorias-productos .div-cat-prod .prod-destacados .prod4 {
   grid-area: prod4;
 }
-.categorias-productos .div-cat-prod button {
-  border-radius: 1.875rem;
-  border-style: none;
-  background-color: #686868;
-  width: 40%;
-  padding: 0.4375rem 0rem;
-  margin-bottom: 1.5625rem;
-}
-.categorias-productos .div-cat-prod button a {
-  text-decoration: none;
-  color: black;
-  color: white;
-  font-size: 0.75rem;
-}
 
 /* page recetas */
 .recetas {
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 15.625rem;
-  grid-template-rows: repeat(3, 21.875rem) 50px;
+  grid-template-columns: 14.375rem;
+  grid-template-rows: repeat(3, 20.625rem) 50px;
   justify-content: center;
   grid-template-areas: "div-cat-recetas1" "div-cat-recetas2" "div-cat-recetas3" "button";
 }
@@ -371,39 +397,23 @@ body {
   flex-direction: column;
   flex-wrap: none;
   background-color: #E0C695;
-  margin: 0.625rem;
+  margin: 0.625rem 0px;
   border-radius: 10%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 .recetas .div-cat-recetas .preview-receta {
-  width: 12.5rem;
-  height: 15.625rem;
+  width: 85%;
+  height: 75%;
   margin: 1.25rem;
   border-radius: 5px;
   background-color: white; /*colocar img receta*/
 }
 .recetas .div-cat-recetas h4 {
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 .recetas .div-cat-recetas p {
   display: none;
-}
-.recetas button {
-  border-radius: 1.875rem;
-  border-style: none;
-  background-color: #686868;
-  width: 55%;
-  height: 30px;
-  justify-self: center;
-  padding: 7px 15px;
-  margin: 15px 0;
-}
-.recetas button a {
-  text-decoration: none;
-  color: black;
-  color: white;
-  font-size: 13px;
 }
 
 /* page politicas */
@@ -473,6 +483,91 @@ form {
   font-family: "Montserrat", sans-serif;
 }
 
+/* tablet */
+@media (min-width: 768px) {
+  /*page main*/
+  .title-main h1 {
+    font-size: 4.375rem;
+  }
+  .title-main h2 {
+    font-size: 1rem;
+    left: 3.4375rem;
+  }
+  /* section bottom */
+  .section-bottom .h3-prod, .section-bottom .h3-recetas {
+    font-size: 1.375rem;
+  }
+  /* section productos inicio */
+  .section-productos .cards .card-productos img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+  .section-productos .cards .card-productos a {
+    font-size: 1rem;
+  }
+  /* section recetas inicio */
+  .section-recetas .grid-bottom {
+    row-gap: 1.25rem;
+    padding: 1.25rem;
+    grid-template: repeat(3, 200px) 50px/300px;
+    grid-template-areas: "card1" "card2" "card3" "button";
+  }
+  .section-recetas .grid-bottom .card3 {
+    grid-area: card3;
+    display: inline;
+    background-color: white;
+    border-radius: 5%;
+  }
+  .scroll-up {
+    padding: 0px 40px 40px 0px;
+  }
+  .scroll-up a img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  /*pages*/
+  .title-pages {
+    font-size: 1.5625rem;
+  }
+  .subtitle-pages {
+    font-size: 1.0625rem;
+  }
+  /*page productos*/
+  .categorias-productos h4 {
+    font-size: 1rem;
+  }
+  .categorias-productos .div-cat-prod {
+    width: 16.25rem;
+    height: 21.25rem;
+  }
+  /*page recetas*/
+  .recetas {
+    grid-template-columns: 16.25rem;
+    grid-template-rows: repeat(3, 23.75rem) 50px;
+  }
+  .recetas .div-cat-recetas .preview-receta {
+    width: 85%;
+    height: 75%;
+    margin: 1.25rem;
+    border-radius: 5px;
+    background-color: white; /*colocar img receta*/
+  }
+  .recetas .div-cat-recetas h4 {
+    font-size: 0.875rem;
+  }
+  .recetas .div-cat-recetas p {
+    display: none;
+  }
+  .recetas button {
+    height: 35px;
+  }
+  .recetas button a {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 0.875rem;
+  }
+}
 /*footer*/
 footer {
   font-family: "Montserrat", sans-serif;

@@ -2,8 +2,8 @@
     .recetas{
         margin-bottom: 100px;
         display: grid;
-        grid-template-columns: 15.625rem;
-        grid-template-rows: repeat(3, 21.875rem) 50px;
+        grid-template-columns: 14.375rem;
+        grid-template-rows: repeat(3, 20.625rem) 50px;
         justify-content: center;
         grid-template-areas:
         "div-cat-recetas1"
@@ -26,57 +26,22 @@
         .div-cat-recetas{
             @include flex(none,center,column,none);
             background-color: $color-cards-pages;
-            margin: .625rem;
+            margin: .625rem 0px;
             border-radius: 10%;
             text-align: center;
             font-family: $font-general;
             .preview-receta{
-                width: 12.5rem;
-                height: 15.625rem;
+                width: 85%;
+                height: 75%;
                 margin: 1.25rem;
                 border-radius: 5px;
                 background-color: white; /*colocar img receta*/
             }
             h4{
-                font-size: 14px;
+                font-size: .875rem;
             }
             p{
                 display: none;
             }
         }
-        button{
-            @include buttons;
-            width: 55%;
-            height: 30px;
-            justify-self: center;
-            padding: 7px 15px;
-            margin: 15px 0;
-            a{
-                @include prop-anclas;
-                color: white;
-                font-size: 13px;
-            }
     }
-}
-
-
-
-
-
-//     @include flex(none,center,column,none);
-//     margin: 20px 0px 120px 0px;
-//     .categorias-recetas{
-//         @include flex(center,center,column,none);
-//         gap: 60px;
-//     }
-//     button{
-//         @include buttons;
-//         padding: 7px 20px 7px 20px;
-//         margin-top: 15px;
-//         a{
-//             @include prop-anclas;
-//             color: white;
-//             font-size: 15px;
-//         }
-//     }
-// }

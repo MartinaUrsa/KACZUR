@@ -6,3 +6,25 @@ header{
     padding: 5px 10px;
     margin-bottom: .625rem;
 }
+
+// iconos social media
+.social-media{
+    width: 100%;
+    @include flex(space-between,center,row,none);
+    .redes{
+        @include flex(none,center,none,none);
+        .ig-logo{
+            width: 1.5625rem ;
+            height: 1.5625rem ;
+        }
+        .fb-logo{
+            width: 1.875rem ;
+            height: 1.875rem ;
+        }
+    }
+}
+
+// iconos accesos display mobile (predeterminado)
+.accesos{
+    display: none;
+}

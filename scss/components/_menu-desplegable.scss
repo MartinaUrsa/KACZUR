@@ -1,19 +1,20 @@
 /*menu desplegable*/
 .menu{
+    i{
     font-size: 30px;
     cursor: pointer;
-    
+    }
     &:hover .menu-desplegable{
         color: white;
         top: 0;
         padding: 30px;
-        transition: all 0.8s;
+        transition: all .6s ease;
     }
 }
 
 .menu-desplegable{
     display: block;
-    background-color: #646464e3;
+    background-color: $hamburger-menu;
     position: absolute;
     z-index: 4;
     top: -100%;
@@ -36,7 +37,7 @@
                 text-decoration: none;
                 font-size: 16px;
                 color: white;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $font-general;
                 padding-left: 7px;
                 display: none;
             }

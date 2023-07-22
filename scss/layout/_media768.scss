@@ -1,0 +1,121 @@
+/* tablet */
+@media (min-width: 768px){
+/*page main*/
+    .title-main{
+        h1{  
+        font-size: 4.375rem;
+        }
+        h2{
+            font-size: 1rem;
+            left: 3.4375rem;
+        }
+    }
+
+    /* section bottom */
+    .section-bottom{
+        .h3-prod, .h3-recetas{
+        font-size: 1.375rem;
+        }
+    }
+
+    /* section productos inicio */
+    .section-productos{
+        .cards{
+            .card-productos{
+                img{
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /* section recetas inicio */
+    .section-recetas{
+        .grid-bottom{
+            row-gap: 1.25rem;
+            padding: 1.25rem;
+            grid-template: repeat(3, 200px) 50px / 300px;
+            grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "button"
+            ;
+            .card3{
+                grid-area: card3;
+                display: inline;
+                background-color: white;
+                border-radius: 5%;
+            }
+        }
+    }
+
+    .scroll-up{
+        padding: 0px 40px 40px 0px;
+        a{
+            img{
+                width: 3.125rem;
+                height: 3.125rem;
+            }
+        }
+    }
+
+/*pages*/
+    .title-pages{
+        font-size: 1.5625rem;
+    }
+    .subtitle-pages{
+        font-size: 1.0625rem;
+    }
+
+
+/*page productos*/
+    .categorias-productos{
+        h4{
+            font-size: 1rem;
+        }
+        .div-cat-prod{
+            width: 16.25rem;
+            height: 21.25rem;
+        }
+    }
+
+/*page recetas*/
+    .recetas{
+        grid-template-columns: 16.25rem;
+        grid-template-rows: repeat(3, 23.75rem) 50px;
+        .div-cat-recetas{
+            .preview-receta{
+                width: 85%;
+                height: 75%;
+                margin: 1.25rem;
+                border-radius: 5px;
+                background-color: white; /*colocar img receta*/
+            }
+            h4{
+                font-size: .875rem;
+            }
+            p{
+                display: none;
+            }
+        }
+        button{
+            height: 35px;
+            a{
+                font-size: 15px;
+            }
+        }
+    }
+
+
+
+    footer{
+        p{
+        font-size: .875rem;
+        }
+    }
+}
