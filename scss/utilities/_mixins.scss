@@ -1,3 +1,9 @@
+@mixin media ($medida){
+    @media (min-width: $medida){
+        @content;
+    }
+}
+
 @mixin flex($justify,$align,$dir,$wrap){
     display: flex;
     justify-content: $justify;

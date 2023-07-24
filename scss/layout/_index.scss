@@ -105,3 +105,140 @@ body{
         }
     }
 }
+
+
+/*MEDIA QUERIES*/
+@include media(425px){
+    .card-productos{ 
+        img{
+            width: 12.5rem;
+            height: 12.5rem;
+        }
+    }
+}
+
+@include media(768px){
+    /* section bottom */
+    .section-bottom{
+        .h3-prod, .h3-recetas{
+        font-size: 1.375rem;
+        }
+    }
+    /* section productos inicio */
+    .section-productos{
+        .cards{
+            .card-productos{
+                img{
+                    width: 12.5rem;
+                    height: 12.5rem;
+                }
+                a{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+    /* section recetas inicio */
+    .section-recetas{
+        .grid-bottom{
+            row-gap: 1.25rem;
+            padding: 1.25rem;
+            grid-template: repeat(3, 200px) 50px / 300px;
+            grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "button"
+            ;
+            .card3{
+                grid-area: card3;
+                display: inline;
+                background-color: white;
+                border-radius: 5%;
+            }
+        }
+    }
+}
+
+@include media(1024px){
+    a:focus-visible{ /*para que las anclas se recuadren al recorrer la pág. con tab*/
+        outline: 3px solid gray;
+    }
+
+    /* fotos main */
+    .fotos-main{ 
+        img{
+            width: 25%;
+        }
+        .foto3{
+            display: inline;
+        }
+    }
+
+    /* section bottom */
+    .section-bottom{
+        margin-top: 3.75rem;
+        .h3-prod, .h3-recetas{
+        font-size: 1.5625rem;
+        }
+        .h3-prod{
+            margin-top: 45px;
+        }
+        .h3-recetas{
+            margin-top: 100px;
+        }
+    }
+
+    /* section productos inicio */
+    .cards{
+        @include flex(center,none,row,none);
+        text-align: center;
+        margin: 4.375rem;
+    }
+
+    /* section recetas inicio */
+    .section-recetas{ 
+        .grid-bottom{
+            row-gap: 30px;
+            padding: 50px;
+            width: 100%;
+            grid-template: repeat(2,250px) / repeat(2, 350px);
+            grid-template-areas:
+            "card1 card2"
+            "card3 button"
+            ;
+        }
+    }
+}
+
+@include media(1440px){
+    /* section bottom */
+    .section-bottom{
+        .h3-prod, .h3-recetas{
+        font-size: 1.875rem;
+        }
+    }
+    /* section productos inicio */
+    .cards{ 
+        .card-productos{
+            margin: 60px;
+            img{
+                width: 15.625rem;
+                height: 15.625rem;
+                a{
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+    /* section recetas inicio */
+    .section-recetas{
+        .grid-bottom{
+            grid-template: repeat(2, 300px) / repeat(2, 400px);
+            grid-template-areas:
+            "card1 card2"
+            "card3 button"
+            ;
+        }
+    } 
+}

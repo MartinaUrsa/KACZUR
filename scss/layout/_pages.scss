@@ -14,3 +14,31 @@
     padding: 10px 30px 30px 30px;
     width: 100%;
 }
+
+@include media(425px){
+    .title-pages{
+        font-size: 1.5625rem;
+    }
+}
+
+@include media(768px){
+    .title-pages{
+        font-size: 1.5625rem;
+    }
+    .subtitle-pages{
+        font-size: 1.0625rem;
+    }
+}
+
+@include media(1024px){
+    .title-pages{
+        margin-top: 3.75rem;
+        font-size: 1.875rem;
+    }
+}
+
+@include media(1440px){
+    .title-pages{
+        font-size: 36px;
+    }
+}

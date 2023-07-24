@@ -1,35 +1,56 @@
 /* page recetas */
+.recetas{
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 14.375rem;
+    grid-template-rows: repeat(3, 20.625rem) 50px;
+    justify-content: center;
+    grid-template-areas:
+    "div1"
+    "div2"
+    "div3"
+    "button"
+    ;
+    .div1{
+        grid-area: div1;
+    }
+    .div2{
+        grid-area: div2;
+    }
+    .div3{
+        grid-area: div3;
+    }
+    .button-page-recetas{
+        grid-area: button;
+    }
+    .div-cat-recetas{
+        @include flex(none,center,column,none);
+        background-color: $color-cards-pages;
+        margin: .625rem 0px;
+        border-radius: 10%;
+        text-align: center;
+        font-family: $font-general;
+        .preview-receta{
+            width: 85%;
+            height: 75%;
+            margin: 1.25rem;
+            border-radius: 5px;
+            background-color: white; /*colocar img receta*/
+        }
+        h4{
+            font-size: .875rem;
+        }
+        p{
+            display: none;
+        }
+    }
+}
+
+@include media(768px){
     .recetas{
-        margin-bottom: 100px;
-        display: grid;
-        grid-template-columns: 14.375rem;
-        grid-template-rows: repeat(3, 20.625rem) 50px;
-        justify-content: center;
-        grid-template-areas:
-        "div-cat-recetas1"
-        "div-cat-recetas2"
-        "div-cat-recetas3"
-        "button"
-        ;
-        .div1{
-            grid-area: div-cat-recetas1;
-        }
-        .div2{
-            grid-area: div-cat-recetas2;
-        }
-        .div3{
-            grid-area: div-cat-recetas3;
-        }
-        .button-page-recetas{
-            grid-area: button;
-        }
+        grid-template-columns: 16.25rem;
+        grid-template-rows: repeat(3, 23.75rem) 50px;
         .div-cat-recetas{
-            @include flex(none,center,column,none);
-            background-color: $color-cards-pages;
-            margin: .625rem 0px;
-            border-radius: 10%;
-            text-align: center;
-            font-family: $font-general;
             .preview-receta{
                 width: 85%;
                 height: 75%;
@@ -45,3 +66,17 @@
             }
         }
     }
+}
+
+@include media(1024px){
+    .recetas{
+        grid-template-columns: repeat(3, 16.25rem);
+        grid-template-rows: 23.75rem 50px;
+        grid-template-areas: 
+        "div1 div2 div3"
+        "button button button"
+        ;
+        column-gap: 100px;
+        row-gap: 20px;
+    }
+}

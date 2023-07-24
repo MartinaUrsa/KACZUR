@@ -46,3 +46,35 @@
         }
     }
 }
+
+@include media(425px){
+    .categorias-productos{
+        h4{
+            font-size: 1rem;
+        }
+        .div-cat-prod{
+            width: 17.5rem;
+            height: 23.125rem;
+        }
+    }
+}
+
+@include media(768px){
+    .categorias-productos{
+        h4{
+            font-size: 1rem;
+        }
+        .div-cat-prod{
+            width: 16.25rem;
+            height: 21.25rem;
+        }
+    }
+}
+
+@include media(1024px){
+    .categorias-productos{
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 120px;
+    }
+}

@@ -9,18 +9,18 @@ Colores
 
 /* MOBILE FIRST */
     /* header */
-    header{
+    /* header{
         width: 100%;
-        display: flex; /*para que social-media y accesos queden uno al lado del otro*/
-        justify-content: space-between;
+        display: flex; para que social-media y accesos queden uno al lado del otro */
+        /* justify-content: space-between;
         align-items: center;
         background-color: #BB7F3B;
         padding: 5px 10px;
-        margin-bottom: .625rem;
-    }
+        margin-bottom: .625rem; 
+    }*/
 
     /* íconos redes sociales */
-    .social-media{
+    /* .social-media{
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -39,10 +39,10 @@ Colores
     .social-media .ig-logo{
         width: 1.5625rem ;
         height: 1.5625rem ;
-    }
+    } */
 
     /* menu desplegable */
-    .social-media .menu{
+    /* .social-media .menu{
         font-size: 30px;
         cursor: pointer;
     }
@@ -95,36 +95,36 @@ Colores
     .menu:hover .menu-desplegable ul li i, 
     .menu:hover .menu-desplegable ul li a){
         display: block;
-    }
+    } */
 
 
     /* íconos accesos */
-    .accesos{
+    /* .accesos{
         display: none;
-    }
+    } */
 
     /* body */
-    body{
+    /* body{
         background-color: #EADCC2;
         font-family: 'Montserrat', sans-serif;
-    }
+    } */
 
     /* TÍTULO */
-    .title-main{ /*para centrar el título + subtítulo*/
-        text-align: center;
+    /* .title-main{ para centrar el título + subtítulo */
+        /* text-align: center;
         text-decoration: none;
-        color: black;
-    }
+        color: black; */
+    /* } */
 
     /* titulo main */
-    .title-main h1{
+    /* .title-main h1{
         font-family: 'Abhaya Libre', serif;
         font-weight: bold;
         font-size: 2.8125rem;
-    }
+    } */
 
     /* SUBTÍTULO */
-    .title-main h2{
+    /* .title-main h2{
         font-style: italic;
         font-weight: lighter;
         font-size: .8125rem;
@@ -132,16 +132,16 @@ Colores
         bottom: .9375rem;
         left: 1.5625rem;
         display: inline;
-    }
+    } */
 
     /* navbar */
-    .navbar .nav-izq,
+    /* .navbar .nav-izq,
     .navbar .nav-der{
         display: none;
-    }
+    } */
 
     /* fotos main*/
-    .fotos-main{
+    /* .fotos-main{
         display: flex;
         gap: .125rem;
         width: 100%;
@@ -149,16 +149,16 @@ Colores
 
     .fotos-main img{
         width: 33.3%;
-        object-fit: cover; /*para igualar el tamaño de todas las imágenes*/
-        overflow: hidden;
-    }
+        object-fit: cover; para igualar el tamaño de todas las imágenes */
+        /* overflow: hidden;
+    } */
 
-    .fotos-main .foto3{
+    /* .fotos-main .foto3{
         display: none;
-    }
+    } */
 
     /* section bottom */
-    .section-bottom{
+    /* .section-bottom{
         background-color: #E0C695;
         margin-top: 1.875rem;
         padding-top: 3.75rem;
@@ -187,18 +187,18 @@ Colores
 
     .section-bottom .h3-recetas i{
         text-align: right;
-    }
+    } */
 
     /* section productos inicio */
-    .cards{
+    /* .cards{
         display: flex;
         flex-direction: column;
         text-align: center;
         margin: 3.125rem;
     }
 
-    .cards .card-productos{ /*centra los círculos respecto al texto sobre ellos*/
-        position: relative;
+    .cards .card-productos{ centra los círculos respecto al texto sobre ellos */
+        /* position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -221,19 +221,19 @@ Colores
         text-decoration: none;
         color: black;
     }
-    
+     */
 
     /* section recetas inicio */
-    .section-recetas{
+    /* .section-recetas{
         margin-top: 3.75rem;
-    }
+    } */
 
-    .section-recetas .grid-bottom{
-        display: grid;
-        justify-content: center;
+    /* .section-recetas .grid-bottom{ */
+        /* display: grid;
+        justify-content: center; */
         /* column-gap: 30px;
         row-gap: 1.25rem; */
-        gap: 1.875rem,1.25rem;
+        /* gap: 1.875rem,1.25rem;
         padding: 1.25rem;
         grid-template: repeat(2,150px) 50px / 250px;
         grid-template-areas:
@@ -285,10 +285,10 @@ Colores
         width: 2.5rem;
         height: 2.5rem;
     }
-
+ */
 
 /* PAGES */
-.title-pages{
+/* .title-pages{
     text-align: center;
     margin-top: 2.5rem;
     font-family: 'Abhaya Libre', serif;
@@ -302,10 +302,10 @@ Colores
     font-size: 18px;
     text-align: center;
     font-style: italic;
-}
+} */
 
 /* page productos */
-.categorias-productos{
+/* .categorias-productos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -378,10 +378,10 @@ Colores
     text-decoration: none;
     color: white;
     font-size: .75rem;
-}
+} */
 
 /* page recetas */
-.recetas{
+/* .recetas{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,7 +432,7 @@ Colores
     text-decoration: none;
     color: white;
     font-size: 15px;
-}
+} */
 
 /* page politicas */
 .devoluciones{
@@ -521,64 +521,64 @@ footer{
 /* MEDIA QUERIES */
 /* mobile */
 @media (min-width: 425px){
-    .title-main h1{
+    /* .title-main h1{
         font-size: 3.125rem;
     }
 
     .title-main h2{
         left: 1.875rem;
-    }
+    } */
 
-    .card-productos img{
+    /* .card-productos img{
         width: 12.5rem;
         height: 12.5rem;
-    }
+    } */
 
     /* PAGES */
-    .title-pages{
+    /* .title-pages{
         font-size: 1.5625rem;
-    }
+    } */
 
     /* page productos */
-    .categorias-productos h4{
+    /* .categorias-productos h4{
         font-size: 1rem;
     }
 
     .categorias-productos .div-cat-prod{
         width: 17.5rem;
         height: 23.125rem;
-    }
+    } */
 }
 
 /* tablet */
 @media (min-width: 768px){
-    .title-main h1{  
+    /* .title-main h1{  
         font-size: 4.375rem;
-    }
+    } */
 
-    .title-main h2{
+    /* .title-main h2{
         font-size: 1rem;
         left: 3.4375rem;
-    }
+    } */
 
     /* section bottom */
-    .section-bottom .h3-prod,
+    /* .section-bottom .h3-prod,
     .section-bottom .h3-recetas{
         font-size: 1.375rem;
-    }
+    } */
 
     /* section productos inicio */
-    .card-productos img{
+    /* .card-productos img{
         width: 14.375rem;
         height: 14.375rem;
     }
 
-    .card-productos a{
+    /* .card-productos a{
         font-size: 1rem;
-    }
+    } */
 
     /* section recetas inicio */
-    .section-recetas .grid-bottom{
+    /* .section-recetas .grid-bottom{
         row-gap: 1.25rem;
         padding: 1.25rem;
         grid-template: repeat(3, 200px) 50px / 300px;
@@ -595,8 +595,8 @@ footer{
         display: inline;
         background-color: white;
         border-radius: 5%;
-    }
-
+    } */
+/* 
     .scroll-up{
         padding: 0px 40px 40px 0px;
     }
@@ -608,25 +608,25 @@ footer{
 
     footer{
         font-size: 0.9rem;
-    }
-}
+    }*/
+} 
 
 /* desktop */
 @media (min-width: 1024px){
-    a:focus-visible{
+    /* a:focus-visible{
         outline: 3px solid gray;
-    }
+    } */
 
     /* header */
-    .social-media{
+    /* .social-media{
         margin-left: 10px;
     }
     
     .social-media .menu{
         display: none;
-    }
+    } */
 
-    .accesos{
+    /* .accesos{
         display: flex;
         justify-content: right;
         align-items: center;
@@ -644,17 +644,17 @@ footer{
         color: white;
         font-size: 15px;
         font-family: 'Montserrat', sans-serif;
-    }
+    } */
 
-    .accesos .carrito{
+    /* .accesos .carrito{
         height: 2.1875rem ;
         width: 2.1875rem;
         cursor: pointer;
         margin-right: 14px;
-    }
+    } */
 
     /* barra buscadora */
-    .buscar{
+    /* .buscar{
         position: relative;
         display: flex;
         align-items: center;
@@ -691,35 +691,35 @@ footer{
 
     .buscar input:focus{
         width: 220px;
-    }
+    } */
 
     /* navbar */
-    .title-main{
+    /* .title-main{
         padding: 10px 0px;
-    }
+    } */
 
-    .navbar{
+    /* .navbar{
         font-family: 'Montserrat', sans-serif;
-        display: flex; /*para alinear título con nav*/
-        justify-content: space-around;
+        display: flex; para alinear título con nav */
+        /* justify-content: space-around;
         align-items: center;
         margin-left: 1.25rem;
         margin-right: 1.25rem;
-    }
+    } */
 
-    .navbar .nav-izq,
+    /* .navbar .nav-izq,
     .navbar .nav-der{
         display: inline;
     }
 
-    .navbar ul{
-        display: flex; /*para alinear cada tab de la nav*/
-        list-style: none;
+    .navbar ul{ */
+        /* display: flex; para alinear cada tab de la nav */
+        /* list-style: none;
         font-size: .9375rem;
         gap: 50px;
-    }
+    } */
 
-    .navbar ul li a{
+    /* .navbar ul li a{
         text-decoration: none;
         color: black;
     }
@@ -727,23 +727,23 @@ footer{
     .navbar ul li a:hover{
         font-weight: bold;
         text-decoration: underline;
-    } 
-
-    .main-tab{ /*para que se vea en bold la tab de la página donde estoy*/
+    }  */
+/* 
+    .main-tab{ 
         font-weight: bold;
-    } 
+    }  */
 
     /* fotos main */
-    .fotos-main img{
+    /* .fotos-main img{
         width: 25%;
     }
 
     .fotos-main .foto3{
         display: inline;
-    }
+    } */
 
     /* section bottom */
-    .section-bottom{
+    /* .section-bottom{
         margin-top: 3.75rem;
     }
     .section-bottom .h3-prod,
@@ -757,19 +757,19 @@ footer{
 
     .section-bottom .h3-recetas{
         margin-top: 100px;
-    }
+    } */
 
     /* section productos inicio */
-    .cards{
+    /* .cards{
         display: flex;
         flex-direction: row;
         justify-content: center;
         text-align: center;
         margin: 4.375rem;
-    }
+    } */
 
     /* section recetas inicio */
-    .section-recetas .grid-bottom{
+    /* .section-recetas .grid-bottom{
         row-gap: 30px;
         padding: 50px;
         width: 100%;
@@ -778,51 +778,48 @@ footer{
         "card1 card2"
         "card3 button"
         ;
-    }
+    } */
 
-    .section-recetas .button-recetas{
+    /* .section-recetas .button-recetas{
         justify-self: start;
         width: 11.25rem;
         height: 2.5rem;
         font-size: 1.0625rem;
-    }
+    } */
     
     /* footer */
-    footer{
+    /* footer{
         font-size: 1rem;
-    }
+    } */
 
     /* PAGES */
-    .title-pages{
+    /* .title-pages{
         margin-top: 3.75rem;
         font-size: 1.875rem;
-    }
+    } */
 
     /* page productos */
-    .categorias-productos{
+    /* .categorias-productos{
         flex-direction: row;
         justify-content: center;
         gap: 30px;
         margin-bottom: 120px;
-    }
-    .scroll-up{
-        display: none;
-    }
+    } */
 }
 
 @media (1024px < width < 1440px) {
-    .title-main{
+    /* .title-main{
         padding: 15px 20px;
     }
 
     .navbar ul{
         gap: 60px;
-    }
+    } */
 }
 
 @media (min-width: 1440px){
     /* header */
-    .title-main{
+    /* .title-main{
         padding: 15px 30px;
     }
 
@@ -833,50 +830,50 @@ footer{
     .title-main h2{
         font-size: 1.125rem;
         left: 5rem;
-    }
+    } */
 
     /* navbar */
-    .navbar ul{
+    /* .navbar ul{
         font-size: 20px;
         gap: 85px;
-    }
+    } */
 
     /* section bottom */
-    .section-bottom .h3-prod,
+    /* .section-bottom .h3-prod,
     .section-bottom .h3-recetas{
         font-size: 1.875rem;
-    }
+    } */
 
     /* section productos inicio */
-    .cards .card-productos{
+    /* .cards .card-productos{
         margin: 60px;
-    }
+    } */
     
-    .card-productos img{
+    /* .card-productos img{
         width: 15.625rem;
         height: 15.625rem;
-    }
+    } */
 
-    .card-productos a{
+    /* .card-productos a{
         font-size: 1.25rem;
-    }
+    } */
 
     /* section recetas inicio */
-    .section-recetas .grid-bottom{
+    /* .section-recetas .grid-bottom{
         grid-template: repeat(2, 300px) / repeat(2, 400px);
         grid-template-areas:
         "card1 card2"
         "card3 button"
         ;
-    }
+    } */
 
     /* PAGES */
-    .title-pages{
+    /* .title-pages{
         font-size: 36px;
-    }
+    } */
 
     /* page productos */
-    .categorias-productos{
+    /* .categorias-productos{
         gap: 60px;
         margin: 50px 0px 120px 0px;
     }
@@ -888,5 +885,5 @@ footer{
     .categorias-productos .div-cat-prod{
         width: 320px;
         height: 420px;
-    }
+    } */
 }

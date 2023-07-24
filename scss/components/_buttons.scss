@@ -1,3 +1,18 @@
+/*header*/
+@include media(1024px){
+    .button-iniciar-sesion{
+        background-color: $main-gray;
+        border-radius: 30px;
+        height: 30px;
+        width: 140px;
+        a{
+            @include prop-anclas;
+            color: white;
+            font-size: 15px;
+            font-family: $font-general;
+        }
+    }
+}
 
 /*boton section recetas main*/
 .grid-bottom{
@@ -13,32 +28,12 @@
             color: white;
             font-family: $font-general;
         }
-    }
-}
-
-.button-page-productos{
-    @include buttons;
-    width: 40%;
-    padding: .4375rem 0rem;
-    margin: 15px 0px;
-    a{
-        @include prop-anclas;
-        color: white;
-        font-size: .75rem;
-    }
-}
-
-.button-page-recetas{
-    @include buttons;
-    width: 60%;
-    height: 30px;
-    justify-self: center;
-    padding: 7px 15px;
-    margin: 15px 0;
-    a{
-        @include prop-anclas;
-        color: white;
-        font-size: 13px;
+        @include media(1024px){
+            justify-self: start;
+            width: 11.25rem;
+            height: 2.5rem;
+            font-size: 1.0625rem;
+        }
     }
 }
 
@@ -52,5 +47,51 @@
             width: 2.5rem;
             height: 2.5rem;
         }
+    }
+    @include media(768px){
+        padding: 0px 40px 40px 0px;
+        a{
+            img{
+                width: 3.125rem;
+                height: 3.125rem;
+            }
+        }
+    }
+}
+
+/*pages*/
+/*page productos*/
+.button-page-productos{
+    @include buttons;
+    width: 45%;
+    height: 30px;
+    padding: 8px 15px;
+    margin: 15px 0px;
+    a{
+        @include prop-anclas;
+        color: white;
+        font-size: .75rem;
+    }
+}
+
+/*page recetas*/
+.button-page-recetas{
+    @include buttons;
+    width: 150px;
+    height: 30px;
+    justify-self: center;
+    padding: 8px 15px;
+    margin: 15px 0;
+    a{
+        @include prop-anclas;
+        color: white;
+        font-size: 13px;
+    }
+    @include media(768px){
+        width: 200px;
+        height: 35px;
+            a{
+                font-size: 15px;
+            }
     }
 }

@@ -24,3 +24,89 @@
         display: none;
     }
 }
+
+@include media(425px){
+    .title-nav{
+        h1{
+            font-size: 3.125rem;
+        }
+        h2{
+            left: 1.875rem;
+        }
+    }
+}
+
+@include media(768px){
+    .title-nav{
+        h1{  
+            font-size: 4.375rem;
+        }
+        h2{
+            font-size: 1rem;
+            left: 3.4375rem;
+        }
+    }
+}
+
+@include media (1024px){
+    .title-nav{
+        padding: 10px 0px;
+    }
+
+    .navbar{
+        font-family: $font-general;
+        @include flex(space-around,center,none,none); /*para alinear título con nav*/
+        margin: 0px 1.25rem;
+        .nav-der, .nav-izq{
+            display: inline;
+        }
+        ul{
+            display: flex; /*para alinear cada tab de la nav*/
+            list-style: none;
+            font-size: .9375rem;
+            gap: 50px;
+            li{
+                a{
+                    @include prop-anclas;
+                    &:hover{
+                        font-weight: bold;
+                        text-decoration: underline;
+                    } 
+                }
+            }
+        }
+    }
+    .main-tab{ /*para que se vea en bold la tab de la página donde estoy*/
+        font-weight: bold;
+    } 
+}
+
+@media (1024px < width < 1440px) {
+    .title-nav{
+        padding: 15px 20px;
+    }
+    .navbar{ 
+        ul{
+            gap: 60px;
+        }
+    }
+}
+
+@include media(1440px){
+    .title-nav{
+        padding: 15px 30px;
+        h1{
+            font-size: 5.625rem;
+        }
+        h2{
+            font-size: 1.125rem;
+            left: 5rem;
+        }
+    }
+    .navbar{
+        ul{
+            font-size: 20px;
+            gap: 85px;
+        }
+    }
+}

@@ -7,7 +7,7 @@ header{
     margin-bottom: .625rem;
 }
 
-// iconos social media
+/*iconos social media*/
 .social-media{
     width: 100%;
     @include flex(space-between,center,row,none);
@@ -18,13 +18,66 @@ header{
             height: 1.5625rem ;
         }
         .fb-logo{
-            width: 1.875rem ;
-            height: 1.875rem ;
+            width: 2rem ;
+            height: 2rem ;
         }
     }
 }
-
-// iconos accesos display mobile (predeterminado)
+/*iconos accesos display mobile (predeterminado)*/
 .accesos{
     display: none;
+}
+
+@include media(1024px){
+    .social-media{
+        margin-left: 5px;
+        .menu{
+            display: none;
+        }
+    }
+    .accesos{
+        @include flex(right,center,none,none);
+        .carrito{
+            height: 2.1875rem ;
+            width: 2.1875rem;
+            cursor: pointer;
+            margin-right: 14px;
+        }
+    } 
+    
+    /* barra buscadora */
+    .buscar{
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:hover input{
+            width: 220px;
+        }
+        & input{
+            width: 0px;
+            height: 30px;
+            margin-right: 2px;
+            padding: 0px 10px;
+            font-size: .9375rem;
+            outline: none;
+            border: 1px solid silver;
+            border-radius: 30px;
+            transition: all 0.5s ease;
+            &:focus{
+                width: 220px;
+            }
+        }
+        i{
+            position: absolute;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.75rem;
+            text-align: center;
+            background-color: #BB7F3B;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
 }

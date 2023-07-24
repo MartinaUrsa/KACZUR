@@ -6,3 +6,15 @@ footer{
     background-color: $color-header-footer;
     padding: 15px;
 }
+
+@include media(768px){
+    footer{
+        font-size: .875rem;
+    }
+}
+
+@include media(1024px){
+    footer{
+        font-size: 16px;
+    }
+}
