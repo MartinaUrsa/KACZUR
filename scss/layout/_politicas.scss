@@ -1,13 +1,46 @@
 /* page politicas */
-.devoluciones{
+.politicas{
     font-family: $font-general;
     line-height: 30px;
-    margin: 10px;
+    margin: 0 30px 70px 30px;
+    font-size: 15px;
+    @include media(768px){
+        margin: 0 50px 80px 50px;
+    }
+    h4{
+        text-align: center;
+        font-size: 16px;
+        margin: 35px 0px 10px 0px;
+        border: 1px solid gray
+    }
     ul{
         li{
-            span{
-                font-weight: bold;
+            list-style: square;
+            margin: 10px 0;
+        }
+    }
+    .cambios{
+        h5{
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+    }
+    .importante{
+        border: solid 3px darkred;
+        border-radius: 5px;
+        padding: 20px;
+        text-align: center;
+        p{
+            b{
+                font-size: 16px;
             }
+        }
+    }
+    .cambios .devoluciones, .procedimiento{
+        p{
+            text-indent: 30px;
+            margin: 10px 0;
         }
     }
 }
