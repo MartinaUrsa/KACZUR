@@ -99,34 +99,39 @@
             </div>
         </nav>
         <h3 class="title-pages">- CONTACTANOS -</h3>
-        <form action="">
-            <fieldset>
-                <legend>Completá el formulario</legend>
-
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" required>
-
-                <label for="telefono">Teléfono: </label>
-                <input type="tel" id="telefono">
-
-                <label for="mensaje">Mensaje: </label>
-                <input type="text" id="mensaje" required>
-            </fieldset>
-        </form>
-        <div class="medios-de-contacto">
-            <h3>Medios de contacto</h3>
-            <ul>
-                <li>Mail: example@example.com</li>
-                <li>Mail imanes: example@example.com</li>
-                <li>Teléfono: 011-1111-1111</li>
-                <li>Celular: 11-1111-1111</li>
-            </ul>    
-            <div class="social-media">
-                <a href="https://api.whatsapp.com/send/?phone=5491150055200&text&type=phone_number&app_absent=0" target="_blank"><img class="wp-logo" src="../assets/img/whatsapp.svg" alt=""></a>
-                <a href="https://www.instagram.com/kaczuragro/" target="_blank"><img class="ig-logo" src="../assets/img/instagram.svg" alt=""></a>
-                <a href="https://www.facebook.com/kaczuragro.com.ar/" target="_blank"><img class="fb-logo" src="../assets/img/facebook.svg" alt=""></a>
+        <section class="contacto">
+            <!-- form -->
+            <div class="form-container">
+                <div class="form-title">Dejanos tu mensaje</div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" placeholder="Ingrese su nombre" name="name" id="fname" required>    
+                        </div>
+                        <div class="input-box">
+                            <label for="lname">Apellido:</label>
+                            <input type="text" placeholder="Ingrese su apellido" name="name" id="lname">
+                        </div>            
+                        <div class="input-box">
+                            <label for="mail">Mail:</label>
+                            <input type="text" placeholder="ejemplo@ejemplo.com" name="name" id="mail" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="fname">Teléfono/Celular:</label>
+                            <input type="text" placeholder="+5491111111111" name="name" id="fname" required>    
+                        </div>
+                        <div class="input-box mensaje">
+                            <label for="mensaje">Mensaje:</label>
+                            <input type="text" placeholder="Ingrese su mensaje" name="name" id="mensaje" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>
