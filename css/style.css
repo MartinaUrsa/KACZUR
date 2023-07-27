@@ -834,8 +834,32 @@ body {
 .contacto {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
+}
+
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: none;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  margin: 50px 10px 10px 10px;
+  gap: 20px;
+}
+.contactos .tel, .contactos .mail {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .contactos .tel, .contactos .mail {
+    width: auto;
+  }
 }
 
 .form-container {
@@ -926,21 +950,94 @@ body {
 
 /* page nosotros */
 .nosotros {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   font-family: "Montserrat", sans-serif;
-  width: 60%;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.nosotros img {
+  width: 250px;
+}
+.nosotros div {
+  font-size: 12px;
+  width: 270px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 25px;
+}
+@media (min-width: 768px) {
+  .nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin: 30px 20px;
+  }
+  .nosotros img {
+    width: 320px;
+  }
+  .nosotros div {
+    font-size: 14px;
+    width: 350px;
+    padding: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .nosotros img {
+    width: 400px;
+  }
+  .nosotros div {
+    font-size: 16px;
+    width: 400px;
+  }
 }
 
-.ubicacion h3 {
-  font-size: 25px;
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 50px 20px;
 }
-.ubicacion img {
-  width: 2rem;
-  height: 2rem;
+.ubicacion div {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  font-size: 17px;
+}
+.ubicacion div h4 {
+  font-family: "Montserrat", sans-serif;
 }
 .ubicacion p {
-  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+.ubicacion iframe {
+  width: 300px;
+  height: 200px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .ubicacion {
+    margin-top: 80px;
+  }
+  .ubicacion div h4 {
+    font-size: 19px;
+  }
+  .ubicacion p {
+    font-size: 1rem;
+  }
+  .ubicacion iframe {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+  }
 }
 
 /*footer*/

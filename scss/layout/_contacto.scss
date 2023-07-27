@@ -2,9 +2,27 @@
 .contacto{
     height: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
 }
+
+.contactos{
+    @include flex(center,none,none,wrap);
+    text-align: center;
+    width: 100%;
+    margin: 50px 10px 010px 10px;
+    gap: 20px;
+    .tel, .mail{
+        display: flex;
+        align-items: center;
+        width: 250px;
+        gap: 5px;
+        @include media(768px){
+            width: auto;
+        }
+    }
+}   
 
 .form-container{
     width: 100%;
