@@ -59,14 +59,13 @@
     }
 }
 
-/*pages*/
-/*page productos*/
+/*botones pages*/
+/*boton page productos*/
 .button-page-productos{
     @include buttons;
     width: 45%;
     height: 30px;
     padding: 8px 15px;
-    margin: 15px 0px;
     a{
         @include prop-anclas;
         color: white;
@@ -74,7 +73,7 @@
     }
 }
 
-/*page recetas*/
+/*boton page recetas*/
 .button-page-recetas{
     @include buttons;
     width: 150px;

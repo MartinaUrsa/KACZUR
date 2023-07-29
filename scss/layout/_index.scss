@@ -79,35 +79,44 @@ body{
 .section-recetas{
     margin-top: 3.75rem;
     .grid-bottom{
-        display: grid;
-        justify-content: center;
-        column-gap: 30px;
-        row-gap: 1.25rem;
-        padding: 1.25rem;
-        grid-template: repeat(2,150px) 50px / 250px;
-        grid-template-areas:
-        "card1"
-        "card2"
-        "button"
-        ;
+        @include grid(250px,repeat(2, 200px) 50px,center,none,20px,20px,"card1" "card2" "button");
+        margin: 25px;
         .card1{
             grid-area: card1;
-            background-color: white;
-            border-radius: 5%;
         }
         .card2{
             grid-area: card2;
-            background-color: white;
-            border-radius: 5%;
         }
         .card3{
             display: none;
+        }
+        button{
+            grid-area: button;
+        }
+        .card{
+            width: 100%;
+            object-fit: cover;
+            img{
+                max-width: 100%;
+                border-radius: 10px;
+            }
+            p{
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+        button{
+            @include buttons;
+            width: 150px;
+            height: 30px;
+            border: none;
+            align-self: start;
         }
     }
 }
 
 
-/*MEDIA QUERIES*/
+/*media queries index*/
 @include media(425px){
     .card-productos{ 
         img{
@@ -141,20 +150,15 @@ body{
     /* section recetas inicio */
     .section-recetas{
         .grid-bottom{
-            row-gap: 1.25rem;
-            padding: 1.25rem;
-            grid-template: repeat(3, 200px) 50px / 300px;
-            grid-template-areas:
-            "card1"
-            "card2"
-            "card3"
-            "button"
-            ;
+            @include grid(300px,repeat(3, 250px) 50px,center,none,20px,20px,"card1" "card2" "card3" "button");
             .card3{
+                display: block;
                 grid-area: card3;
-                display: inline;
-                background-color: white;
-                border-radius: 5%;
+            }
+            .card{
+                p{
+                    font-size: 18px;
+                }
             }
         }
     }
@@ -199,15 +203,9 @@ body{
     /* section recetas inicio */
     .section-recetas{ 
         .grid-bottom{
-            row-gap: 30px;
-            padding: 50px;
-            width: 100%;
-            grid-template: repeat(2,250px) / repeat(2, 350px);
-            grid-template-areas:
-            "card1 card2"
-            "card3 button"
-            ;
-        }
+            @include grid(repeat(2, 300px),repeat(2, 250px),center,none,20px,20px,"card1 card2""card3 button");
+            margin: 25px;
+        } 
     }
 }
 
@@ -231,14 +229,4 @@ body{
             }
         }
     }
-    /* section recetas inicio */
-    .section-recetas{
-        .grid-bottom{
-            grid-template: repeat(2, 300px) / repeat(2, 400px);
-            grid-template-areas:
-            "card1 card2"
-            "card3 button"
-            ;
-        }
-    } 
 }
