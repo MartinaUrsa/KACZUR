@@ -13,28 +13,6 @@
         text-indent: 20px;
         line-height: 25px;
     }
-    @include media(768px){
-        @include flex(center,center,row,nowrap);
-        gap: 5px;
-        margin: 30px 20px;
-        img{
-            width: 320px;
-        }
-        div{
-            font-size: 14px;
-            width: 350px;
-            padding: 30px;
-        }
-    }
-    @include media(1024px){
-        img{
-            width: 400px;
-        }
-        div{
-            font-size: 16px;
-            width: 400px;
-        }
-    }
 }
 
 .ubicacion{
@@ -58,7 +36,23 @@
         height: 200px;
         margin-top: 20px;
     }
-    @include media(768px){
+}
+
+@include media(768px){
+    .nosotros{
+        @include flex(center,center,row,nowrap);
+        gap: 5px;
+        margin: 30px 20px;
+        img{
+            width: 320px;
+        }
+        div{
+            font-size: 14px;
+            width: 350px;
+            padding: 30px;
+        }
+    }
+    .ubicacion{
         margin-top: 80px;
         div{
             h4{
@@ -72,7 +66,18 @@
             width: 500px;
             height: 300px;
             margin-top: 20px;
-        }        
+        }    
     }
 }
 
+@include media(1024px){
+    .nosotros{
+        img{
+            width: 400px;
+        }
+        div{
+            font-size: 16px;
+            width: 400px;
+        }
+    }
+}

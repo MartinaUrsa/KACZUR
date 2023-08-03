@@ -42,14 +42,6 @@ font-family: 'Montserrat', sans-serif;*/
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-@media (min-width: 1024px) {
-  .grid-bottom .button-section-recetas {
-    justify-self: start;
-    width: 11.25rem;
-    height: 2.5rem;
-    font-size: 1.0625rem;
-  }
-}
 
 /*boton scroll up*/
 .scroll-up {
@@ -60,15 +52,6 @@ font-family: 'Montserrat', sans-serif;*/
 .scroll-up a img {
   width: 2.5rem;
   height: 2.5rem;
-}
-@media (min-width: 768px) {
-  .scroll-up {
-    padding: 0px 40px 40px 0px;
-  }
-  .scroll-up a img {
-    width: 3.125rem;
-    height: 3.125rem;
-  }
 }
 
 /*botones pages*/
@@ -105,7 +88,15 @@ font-family: 'Montserrat', sans-serif;*/
   color: white;
   font-size: 13px;
 }
+
 @media (min-width: 768px) {
+  .scroll-up {
+    padding: 0px 40px 40px 0px;
+  }
+  .scroll-up a img {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
   .button-page-recetas {
     width: 200px;
     height: 35px;
@@ -114,7 +105,14 @@ font-family: 'Montserrat', sans-serif;*/
     font-size: 15px;
   }
 }
-
+@media (min-width: 1024px) {
+  .grid-bottom .button-section-recetas {
+    justify-self: start;
+    width: 11.25rem;
+    height: 2.5rem;
+    font-size: 1.0625rem;
+  }
+}
 /*header*/
 header {
   width: 100%;
@@ -740,6 +738,9 @@ body {
   grid-template-columns: 14.375rem;
   grid-template-rows: repeat(3, 20.625rem) 50px;
   justify-content: center;
+  align-items: none;
+  column-gap: none;
+  row-gap: none;
   grid-template-areas: "div1" "div2" "div3" "button";
 }
 .recetas .div1 {
@@ -892,11 +893,6 @@ body {
   width: 250px;
   gap: 5px;
 }
-@media (min-width: 768px) {
-  .contactos .tel, .contactos .mail {
-    width: auto;
-  }
-}
 
 .form-container {
   width: 100%;
@@ -906,20 +902,9 @@ body {
   padding: 25px;
   border-radius: 5px;
 }
-@media (min-width: 768px) {
-  .form-container {
-    width: 850px;
-    height: 450px;
-  }
-}
 .form-container .form-title {
   font-size: 17px;
   font-weight: 600;
-}
-@media (min-width: 768px) {
-  .form-container .form-title {
-    font-size: 20px;
-  }
 }
 .form-container form .user-details {
   display: flex;
@@ -931,19 +916,9 @@ body {
   width: 100%;
   margin: 10px 0;
 }
-@media (min-width: 768px) {
-  .form-container form .user-details .input-box {
-    width: calc(50% - 15px);
-  }
-}
 .form-container form .user-details .input-box label {
   font-weight: 600;
   font-size: 15px;
-}
-@media (min-width: 768px) {
-  .form-container form .user-details .input-box label {
-    font-size: 16px;
-  }
 }
 .form-container form .user-details .input-box input {
   font-family: "Montserrat", sans-serif;
@@ -984,6 +959,24 @@ body {
   background-color: rgba(78, 77, 77, 0.8588235294);
 }
 
+@media (min-width: 768px) {
+  .contactos .tel, .contactos .main {
+    width: auto;
+  }
+  .form-container {
+    width: 850px;
+    height: 450px;
+  }
+  .form-container .form-title {
+    font-size: 20px;
+  }
+  .form-container form .user-details .input-box {
+    width: calc(50% - 15px);
+  }
+  .form-container form .user-details label {
+    font-size: 16px;
+  }
+}
 /* page nosotros */
 .nosotros {
   display: flex;
@@ -1003,34 +996,6 @@ body {
   text-align: justify;
   text-indent: 20px;
   line-height: 25px;
-}
-@media (min-width: 768px) {
-  .nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 5px;
-    margin: 30px 20px;
-  }
-  .nosotros img {
-    width: 320px;
-  }
-  .nosotros div {
-    font-size: 14px;
-    width: 350px;
-    padding: 30px;
-  }
-}
-@media (min-width: 1024px) {
-  .nosotros img {
-    width: 400px;
-  }
-  .nosotros div {
-    font-size: 16px;
-    width: 400px;
-  }
 }
 
 .ubicacion {
@@ -1059,7 +1024,25 @@ body {
   height: 200px;
   margin-top: 20px;
 }
+
 @media (min-width: 768px) {
+  .nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin: 30px 20px;
+  }
+  .nosotros img {
+    width: 320px;
+  }
+  .nosotros div {
+    font-size: 14px;
+    width: 350px;
+    padding: 30px;
+  }
   .ubicacion {
     margin-top: 80px;
   }
@@ -1075,7 +1058,15 @@ body {
     margin-top: 20px;
   }
 }
-
+@media (min-width: 1024px) {
+  .nosotros img {
+    width: 400px;
+  }
+  .nosotros div {
+    font-size: 16px;
+    width: 400px;
+  }
+}
 /*footer*/
 footer {
   font-family: "Montserrat", sans-serif;

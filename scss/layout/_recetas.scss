@@ -1,16 +1,7 @@
 /* page recetas */
 .recetas{
     margin-bottom: 100px;
-    display: grid;
-    grid-template-columns: 14.375rem;
-    grid-template-rows: repeat(3, 20.625rem) 50px;
-    justify-content: center;
-    grid-template-areas:
-    "div1"
-    "div2"
-    "div3"
-    "button"
-    ;
+    @include grid(14.375rem,(repeat(3, 20.625rem) 50px),center,none,none,none,"div1""div2""div3""button");
     .div1{
         grid-area: div1;
     }

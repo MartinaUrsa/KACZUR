@@ -51,7 +51,6 @@
     .title-nav{
         padding: 10px 0px;
     }
-
     .navbar{
         font-family: $font-general;
         @include flex(space-around,center,none,none); /*para alinear título con nav*/
