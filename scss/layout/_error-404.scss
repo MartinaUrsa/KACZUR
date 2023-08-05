@@ -1,0 +1,40 @@
+.error-404{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px
+    }
+    button{
+        @include buttons;
+        width: 130px;
+        margin: 20px;
+        padding: 8px 9px;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+@include media(768px){
+    .error-404{
+        img{
+            width: 40%;
+        }
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 16px
+        }
+    }
+}
